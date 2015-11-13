@@ -9,14 +9,22 @@
     <br>
 <% end %>
   </div>
- </div>
-
+</div>
+<form class="form-horizontal">
+    <div class="form-group">
 <%= form_for(Message.new) do |f| %>
    名前:
-   <%=f.text_field :name%>
-   
+   <%=f.text_field :name%><br>
+   <br>
+   </div>
+</form>
+<form class="form-horizontal">
+    <div class="form-group">
+ 
    内容:
-   <%=f.text_field :body%>
+   <%=f.text_area :body%>
    <%= f.submit class: "btn btn-sm btn-primary"%>
  <% end %>
+ </div>
+</form>
    
